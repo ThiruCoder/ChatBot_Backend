@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node Server.js",
+    "dev": "nodemon Server.js",
+    "main": "Server.js",
+    "build": "npm install --prefix ./client && npm run build --prefix ./client && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express.js": "^1.0.0",
+    "nodemon": "^3.1.9",
+    "socket.io": "^4.8.1"
+  }
+}
