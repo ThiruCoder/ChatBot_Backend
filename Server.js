@@ -29,7 +29,7 @@ app.use(express.json())
 // Serve static files
 app.use(express.static(path.join(__dirname, 'client', 'dist')));
 app.use(cors({
-    origin: 'http://localhost:3001',
+    origin: 'https://chatbot-frontend-de18.onrender.com',
 }));
 
 app.get('*', (req, res) => {
@@ -79,7 +79,7 @@ io.on('connection', (socket) => {
         console.log(`User disconnected: ${socket.id}`);
     });
 });
-
+// https://chatbot-backend-l5r0.onrender.com
 
 app.get('/', (req, res) => {
     res.send('Backend is running...')
